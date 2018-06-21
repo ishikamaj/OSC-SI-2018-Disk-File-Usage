@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+    color: #E4AC81;
+}
+body { 
+    background-color: #181819;
+}
+.btn-primary {
+    background-color: #7522C9;
+    border-color: #7522C9;
+}
+.form-control {
+    background-color: #181819;
+    border-color: #D8376A;
+}
+p {
+    color: #E4AC81;
+}
+
+</style>
+</head>
+
+<body>
+<h1 class="display-4 py-3 mb-3 border-bottom">
+    Find User
+</h1>
+
+<p>
+<form action="<%= url ("/usage") %>">
+  <div class="form-group">
+    <label for="inputUser" style="color:#E4AC81">Username</label>
+    <input name="user" type="text" class="form-control" id="inputUser" >
+  </div>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+</p>
+</body>
